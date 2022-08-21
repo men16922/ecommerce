@@ -1,0 +1,11 @@
+server:
+  port: 8761 # Eureka web service 포트 설정
+
+spring:
+  application:
+    name: discoveryservice # Microservice ID
+
+eureka:
+  client: # eureka 자기자신을 클라이언트로 서버에 등록 -> 필요없으므로 false
+    register-with-eureka: false
+    fetch-registry: false
