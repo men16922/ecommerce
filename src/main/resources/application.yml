@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: discoveryservice # Microservice ID
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      name: ecommerce
 
 eureka:
   client: # eureka 자기자신을 클라이언트로 서버에 등록 -> 필요없으므로 false
